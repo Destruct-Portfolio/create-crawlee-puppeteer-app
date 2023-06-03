@@ -1,0 +1,38 @@
+{
+  "name": "create-puppeteer-app",
+  "version": "1.0.0",
+  "description": "A boilerplate for puppeteer scrapers.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "create-puppeteer-app": "./bin"
+  },
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "test": "npm run build && mocha dist/tests --recursive",
+    "prestart": "npm run build",
+    "start": "node ./dist/index.js",
+    "start:file": "npm run build && node"
+  },
+  "dependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.16.3",
+    "assert": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "mocha": "^10.2.0",
+    "puppeteer": "^20.2.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "puppeteer-with-fingerprints": "^1.2.1",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
+  },
+  "keywords": [
+    "scraping",
+    "puppeteer",
+    "web automation",
+    "crawler"
+  ],
+  "author": "",
+  "license": "ISC"
+}
