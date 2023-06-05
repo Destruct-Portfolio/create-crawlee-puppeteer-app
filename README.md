@@ -1,2 +1,2 @@
-# create-puppeteer-app
+# create-crawlee-puppeteer-app
 A boilerplate for puppeteer scrapers.
